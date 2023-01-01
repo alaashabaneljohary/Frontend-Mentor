@@ -1,0 +1,129 @@
+/* Start Global Rules */
+body 
+{
+    font-family: "Outfit";
+    background-color: rgb(13, 25, 43);
+}
+/* End Global Rules */
+
+/* Start Section   */
+.component 
+{
+    width: 20%;
+    margin: 100px auto;
+    min-width: 290px;
+    height: 100%;
+    background-color: hsl(216, 50%, 16%);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.component .component-image  
+{
+    position: relative;
+}
+.component .component-image img {
+    border-radius: 13px;
+}
+.component .component-image  .view 
+{
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    opacity: 0;
+    transition: opacity 0.8s ease-in ;
+    transition-delay: .4s;
+}
+.component .component-image::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: hsl(178, 100%, 50%);
+    border-radius: 13px;
+    opacity: 0;
+    transition: opacity 0.8s ease-in ;
+}
+.component .component-image:hover::before
+{
+    opacity: 0.7;
+}
+.component .component-image:hover .view 
+{
+    opacity : 1 ;
+}
+.component_link 
+{
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin: 14px 0;
+}
+.component_link:hover {
+    text-decoration: none;
+    color: hsl(178, 100%, 50%);
+}
+.contenedor2 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.balance , .text-time {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.balance .balance_text ,
+.text__paragraph--icon ,
+.desc  {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.balance .balance_text 
+{
+    color: hsl(178, 100%, 50%);
+}
+.text__paragraph--icon ,
+.desc
+{
+    color: hsl(215, 51%, 70%);
+}
+footer 
+{
+    border-top:  1px solid #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+
+}
+footer .footer_img  
+{
+   width:  30px ;
+   height: 30px;
+   border: 1px dotted #ffffff;
+   border-radius: 50%;
+   margin-top: 10px;
+}
+footer .footer_text  
+{
+    color: hsl(215, 51%, 70%);
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+    margin-top: 27px   
+}
+footer .footer_text strong {
+    color: #ffffff;
+    transition: color 0.8s ease-in;
+}
+footer .footer_text strong:hover {
+    color: hsl(178, 100%, 50%);
+}

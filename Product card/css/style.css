@@ -1,0 +1,79 @@
+/* Start Global Rules */
+body 
+{
+    font-family: "Outfit";
+    background-color: var(--cream);
+}
+:root {
+    --font-size: 14px;
+    --cream: hsl(30, 38%, 92%);
+    --dark-green: hsl(158, 36%, 37%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+}
+/* End Global Rules */
+
+/* Start Section   */
+.table_card 
+{
+    width: 50%;
+    min-width: 400px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.table_card figure img 
+{
+    width: 100% ;
+    border-radius: 6px;
+    transition: opacity 0.7s ease-in;
+}
+.table_card figure img:hover {
+    opacity: 0.7;
+}
+.table_card aside 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.table_card aside {
+  
+  box-shadow: 1px 4px 5px wheat;
+  padding: 0.75rem 1.5rem;
+}
+.table_card aside .sub_title {
+    font-size: 14px ;
+    letter-spacing: 6px;
+    color: var(--dark-grayish-blue);
+}
+.table_card aside .title {
+    font-weight: bold;
+    font-size: 40px;
+    color: var(--very-dark-blue);
+}
+.table_card aside .desc {
+    color:  var(--dark-grayish-blue);
+}
+.table_card aside .price_container .price{
+
+    color: var(--dark-green);
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: fantasy;
+}
+.table_card aside .price_container .sale_price 
+{
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+}
+.table_card aside .btn_them {
+
+    background-color: var(--dark-green);
+    color: var(--cream);
+    font-weight: 700;
+    margin-top: 45px;
+    padding: 0.75rem 1.5rem;
+}
